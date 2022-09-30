@@ -1,0 +1,6 @@
+properties_config_file_format = ".properties"
+xml_config_file_format = ".xml"
+json_config_file_format = ".json"
+yml_config_file_format = ".yml"
+yaml_config_file_format = ".yaml"
+default_config_file_format = ""
