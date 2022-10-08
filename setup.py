@@ -1,7 +1,7 @@
 # encoding: utf-8
 from setuptools import setup, find_packages
 
-__version__ = "0.0.2"
+__version__ = "1.0.0"
 __author__ = 'darr_en1'
 __email__ = 'zhouttt1995@gmail.com'
 readme_path = 'README.md'
