@@ -1,16 +1,15 @@
 # encoding: utf-8
-"""
-pyapollo 常用工具包
-
-
-"""
 from setuptools import setup, find_packages
 
-SHORT = u'pyapollo'
+__version__ = "0.0.2"
+__author__ = 'darr_en1'
+__email__ = 'zhouttt1995@gmail.com'
+readme_path = 'README.md'
+SHORT = 'Python version client based on Apollo'
 
 setup(
-    name='pyapollo',
-    version='0.0.1',
+    name='strengthen-apollo-client',
+    version=__version__,
     packages=find_packages(),
     install_requires=[
         'requests',
@@ -18,17 +17,17 @@ setup(
 
     ],
     url='https://github.com/Darr-en1/pyapollo',
-    author='darr_en1',
-    author_email='zhouttt1995@gmail.com',
+    author=__author__,
+    author_email=__email__,
     classifiers=[
-        'Programming Language :: Python',
-        'Programming Language :: Python :: 2.7',
+        'Programming Language :: Python :: 3.6',
     ],
     include_package_data=True,
     package_data={'': ['*.py', '*.pyc']},
     zip_safe=False,
     platforms='any',
 
-    description=SHORT,
-    long_description=__doc__,
+    description='Python version client based on Apollo',
+    long_description=open(readme_path, encoding='utf-8').read(),
+    long_description_content_type='text/markdown',
 )
