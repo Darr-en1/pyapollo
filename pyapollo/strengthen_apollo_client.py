@@ -12,6 +12,11 @@ from pyapollo.parser_selector import get_format_parser
 
 
 class StrengthenApolloClient(ApolloClient):
+    def __init__(self, app_id, namespace_list=None, *args, **kwargs):
+        super().__init__(app_id, *args, **kwargs)
+        if namespace_list:
+            self._notification_map = {namespace: -1 for namespace in namespace_list}
+
     def get_value(self, key, default_val=None, namespace='application', auto_fetch_on_cache_miss=False):
         (file_name, file_suffix) = os.path.splitext(namespace)
         if file_suffix == properties_config_file_format:
