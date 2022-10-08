@@ -25,7 +25,7 @@ pip install strengthen_apollo_client
 
 * 实时同步配置
 * 本地缓存
-* 支持properties,yaml,json,json,xml格式
+* 支持properties,xml,json,yml,yaml格式
 
 
 # Usage
