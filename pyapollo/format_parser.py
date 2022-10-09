@@ -7,7 +7,7 @@ class DefaultContentParser:
         return configContent
 
 
-class PropertiesContentParser:
+class PropertiesContentParser(DefaultContentParser):
     pass
 
 

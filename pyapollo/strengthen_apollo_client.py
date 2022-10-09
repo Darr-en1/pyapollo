@@ -1,6 +1,5 @@
 import logging
 import os
-import time
 
 import requests
 from requests import ReadTimeout
@@ -37,7 +36,6 @@ class StrengthenApolloClient(ApolloClient):
                 self._long_poll()
             except ReadTimeout:
                 logging.getLogger(__name__).warning('listener loop Timeout, Again!')
-                time.sleep(self.timeout)
 
         logging.getLogger(__name__).info("Listener stopped!")
         self.stopped = True
