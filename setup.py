@@ -13,7 +13,8 @@ setup(
     packages=find_packages(),
     install_requires=[
         'requests',
-        'pyyaml'
+        'pyyaml',
+        'aiohttp'
 
     ],
     url='https://github.com/Darr-en1/pyapollo',
